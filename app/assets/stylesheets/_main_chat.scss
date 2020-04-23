@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+.main_chat {
+  background-color: #fafafafa;
+  width: 100vw;
+  height: 100vh;
+  .main_header {
+    background-color: #ffffff;
+    border-bottom: #eeeeee;
+    height: 100px;
+    width: calc(100vw - 300px);
+    position: fixed;
+    .header_box {
+      margin: 0 40px;
+      display: flex;
+      justify-content: space-between;
+      .header_text {
+        padding-top: 35px;
+        h1 {
+          color: #333333;
+          font-size: 20px;
+
+        }
+        p.menber_name {
+         color: #999999;
+         font-size: 12px;
+         margin-top: 15px;
+        }
+     }
+      .header_edit {
+        line-height: 100px;
+        a.edit-btn {
+          padding: 11px 20px;
+          font-size: 16px;
+          color: #38aef0;
+          border: 1px solid #38aef0;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .main-list {
+    background-color: #fafafa;
+    height: calc(100vh - 135px);
+    width: calc(100vw - 300px);
+    .main_box {
+      margin-top: 45px;
+      margin-left: 40px;
+      width: 100%;
+      height: 60px;
+      .top_content {
+        display: flex;
+        h2.user_name {
+          color: #333333;
+          font-size: 16px;
+          font-weight: bold;
+        }
+        span.date {
+          color: #999999;
+          font-size: 12px;
+          margin-left:10px;
+        }
+      }
+      .main_content {
+        margin-top: 12px;
+        p.main_text {
+          color: #434a54;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .footer-form {
+    background-color: #d2d2d2;
+    height: 90px;
+    width: calc(100vw - 300px);
+    form {
+      margin: 0 40px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .input-box {
+        display: flex;
+        position: relative;
+        .text_form {
+          width: 950px;
+          margin: 20px 0 10px 0;
+
+        }
+        .image {
+          position: absolute;
+          top: 30px;
+          right: 10px;
+          font-size: 1.4em;
+        }
+          .file {
+            display: none;
+          }
+      }
+      .submit-btn {
+        width: 100px;
+        height: 50px;
+        padding: 0 30px;
+       margin: 20px 75px 10px 15px;
+        background-color: #38aef0;
+        color: white;
+        cursor: pointer;
+
+      }
+    }
+  }
+}

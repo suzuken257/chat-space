@@ -1,0 +1,42 @@
+.main_chat
+  .main_header
+    .header_box
+      .header_text
+        %h1 text
+        %p.menber_name Member : suzuki
+      .header_edit
+        %a(class="edit-btn" href="#")
+          Edit
+  .main-list
+    .main_box
+      .top_content
+        %h2.user_name
+          suzuki
+        %span.date
+          2020/04/22(Wed) 22:59:50
+      .main_content
+        %p.main_text おはよう
+    .main_box
+      .top_content
+        %h2.user_name
+          sato
+        %span.date
+          2020/04/22(Wed) 22:59:50
+      .main_content
+        %p.main_text hello!
+    .main_box
+      .top_content
+        %h2.user_name
+          suzuki
+        %span.date
+          2020/04/22(Wed) 22:59:50
+      .main_content
+        %p.main_text おはよう
+  .footer-form
+    %form.new_message(action="#")
+      .input-box
+        %input.text_form(type="text" placeholder="new a message")/
+        %label.image
+          <i class="fas fa-image"></i>
+          %input.file(type="file")/
+      %input.submit-btn(type="submit")/
