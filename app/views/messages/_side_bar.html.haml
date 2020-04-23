@@ -2,13 +2,13 @@
   .side_bar__header
     .side_bar__header__items
       %p.user_name
-        suzuki
+        = current_user.name
       %ul.menu
         %li.edit_user
-          %a(href="#")
+          = link_to do
             %i(class="far fa-edit")
         %li.new_group
-          %a(class="cogs" href="#")
+          =link_to edit_user_path(current_user) do
             %i(class="fas fa-cog")
   .side-list
     .side-list__group_box
