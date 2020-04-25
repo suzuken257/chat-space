@@ -5,25 +5,16 @@
         = current_user.name
       %ul.menu
         %li.edit_user
-          = link_to do
+          = link_to new_group_path do
             %i(class="far fa-edit")
         %li.new_group
-          =link_to edit_user_path(current_user) do
+          = link_to edit_user_path(current_user) do
             %i(class="fas fa-cog")
   .side-list
-    .side-list__group_box
-      .side-list__group_box__name
-        suzuki
-      .side-list__group_box__text
-        ありがとう
-    .side-list__group_box
-      .side-list__group_box__name
-        sato
-      .side-list__group_box__text
-        さようなら
-    .side-list__group_box
-      .side-list__group_box__name
-        utida
-      .side-list__group_box__text
-        こんばんは
-  
+    - current_user.groups.each do |group|
+      .side-list__group
+        = link_to group_messages_path(group) do
+          .side-list__group__name
+            = group.name
+          .side-list__group__text
+            = group.show_last_message
