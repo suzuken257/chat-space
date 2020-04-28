@@ -48,10 +48,16 @@ $(function () {
       contentType: false
     })
     .done(function(data){
-      console.log(data);
+      // console.log(data);
       var html = buildHTML(data);
       $('.messages').append(html);
       $('form')[0].reset();
+      $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
+      $('input').prop('disabled', false)
     })
+    .fail(function(){
+      alert('error')
+      $('input').prop('disabled', false);
+  })
   });
 });

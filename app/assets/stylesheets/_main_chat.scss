@@ -44,6 +44,7 @@
     width: calc(100vw - 300px);
     bottom: 90px;
     left: 300px;
+    overflow: scroll;
     .main-list {
       .main_content {
         display: flex;
