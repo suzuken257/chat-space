@@ -14,6 +14,6 @@
       = f.text_field :content, class: 'form__message', placeholder: 'type a message'
       .form__mask
         = f.label :image, class: 'form__mask__image' do
-          = icon 'fa_image', class: 'icon'
+          <i class="fas fa-image"></i>
           = f.file_field :image, class: 'hidden'
       = f.submit 'Send', class: 'form__submit'

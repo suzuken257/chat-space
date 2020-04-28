@@ -7,6 +7,8 @@
     border-bottom: #eeeeee;
     height: 100px;
     width: calc(100vw - 300px);
+    position: fixed;
+    z-index: 5;
     &__box {
       margin: 0 40px;
       display: flex;
@@ -18,9 +20,9 @@
           font-size: 20px;
         }
         li {
-         color: #999999;
-         font-size: 12px;
-         margin-top: 15px;
+          color: #999999;
+          font-size: 12px;
+          margin-top: 15px;
         }
       }
       .header_edit {
@@ -42,8 +44,8 @@
     width: calc(100vw - 300px);
     bottom: 90px;
     left: 300px;
-    .message {
-      .upper-message {
+    .main-list {
+      .main_content {
         display: flex;
         &__user-name {
           color: $black;
@@ -56,7 +58,7 @@
           padding-left: 10px;
         }
       }
-      .lower-message {
+      .main_message {
         margin-top: 10px;
         margin-bottom: 40px;
         &__content {
