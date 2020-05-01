@@ -44,7 +44,7 @@
   }
   .messages {
     background-color: #FAFAFA;
-    padding: 125px 40px 30px;
+    padding: 140px 40px 30px;
     height: 90vh;
     width: calc(100vw - 300px);
     overflow: scroll;
@@ -81,7 +81,7 @@
     box-sizing: border-box;
     height: 90px;
     width: calc(100% - 300px);
-    padding: 20px 50px 20px 40px;
+    padding: 20px 40px 20px 40px;
     position: fixed;
     bottom: 0;
     left: 300px;
@@ -90,7 +90,7 @@
       border: none;
       float: left;
       height: 50px;
-      width: calc(100% - 150px);
+      width: calc(100% - 146px);
       padding-left: 10px;
     }
     &__mask {
@@ -112,7 +112,7 @@
       border: none;
       color: $white;
       float: right;
-      font-size: 16px;
+      font-size: 15px;
       height: 50px;
       margin-left: 15px;
       padding: 0 30px;
