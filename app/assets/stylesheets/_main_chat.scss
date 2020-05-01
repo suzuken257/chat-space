@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .main_chat {
   background-color: #fafafafa;
   width: 100vw;
@@ -14,16 +17,18 @@
       display: flex;
       justify-content: space-between;
       &__group {
-        padding-top: 35px;
-        h1 {
+        padding-top: 40px;
+
+        div {
           color: #333333;
           font-size: 20px;
+          margin-bottom: 8px;
         }
-        li {
+          span {
           color: #999999;
           font-size: 12px;
           margin-top: 15px;
-        }
+          }
       }
       .header_edit {
         line-height: 100px;
@@ -39,19 +44,20 @@
   }
   .messages {
     background-color: #FAFAFA;
-    padding: 130px 40px 90px;
-    height: 50vh;
+    padding: 20px 40px 30px;
+    height: 90vh;
     width: calc(100vw - 300px);
-    bottom: 90px;
-    left: 300px;
     overflow: scroll;
     .main-list {
+      padding-bottom: 40px;
       .main_content {
         display: flex;
+        margin-bottom: 20px;
         &__user-name {
           color: $black;
           font-size: 16px;
           font-weight: bold;
+          padding-bottom: 10px;
         }
         &__date {
           color: $light_gray;
@@ -59,13 +65,9 @@
           padding-left: 10px;
         }
       }
-      .main_message {
-        margin-top: 10px;
-        margin-bottom: 40px;
-        &__content {
-          color: $black;
-          font-size: 14px;
-        }
+      .main_message{
+        color: $black;
+        font-size: 14px;
         &__image {
           width: 200px;
           height: 200px;
@@ -89,6 +91,7 @@
       float: left;
       height: 50px;
       width: calc(100% - 150px);
+      padding-left: 10px;
     }
     &__mask {
       background-color: $white;
